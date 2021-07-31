@@ -10,9 +10,6 @@ const {
   ON_GITHUB_PAGES,
 } = process.env;
 
-const basePath = ON_GITHUB_PAGES ? '/wallisconsultancy' : '';
-const assetPrefix = ON_GITHUB_PAGES ? '/wallisconsultancy/' : '';
-
 const env = {
   EMAIL_JS_SERVICE,
   EMAIL_JS_TEMPLATE,
@@ -34,8 +31,8 @@ module.exports = withPlugins([
   }],
   {
     env,
-    basePath,
-    assetPrefix,
+    basePath: '/wallisconsultancy',
+    assetPrefix: '/wallisconsultancy/',
     images: {
       loader: "imgix",
       path: "",
@@ -45,7 +42,7 @@ module.exports = withPlugins([
       { dev, dir, outDir, distDir, buildId }
     ) {
       return {
-        '/': { page: '/' }, 
+        '/': { page: '/' },
       }
     },
   },
