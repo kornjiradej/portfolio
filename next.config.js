@@ -30,9 +30,7 @@ module.exports = withPlugins([
     },
   }],
   {
-    env,
-    basePath: '/wallisconsultancy',
-    assetPrefix: '/wallisconsultancy/',
+    env, 
     images: {
       loader: "imgix",
       path: "",
