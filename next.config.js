@@ -33,10 +33,10 @@ module.exports = withPlugins([
     env,
     basePath: '/wallisconsultancy',
     assetPrefix: '/wallisconsultancy/',
-    // images: {
-    //   loader: "imgix",
-    //   path: "",
-    // },
+    images: {
+      loader: "imgix",
+      path: "",
+    },
     imagesPublicPath: '/wallisconsultancy/_next/static/images/',
     exportPathMap: async function (
       defaultPathMap,
