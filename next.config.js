@@ -1,7 +1,4 @@
 module.exports = {
-  reactStrictMode: true,
+  basePath: '/wallisconsultancy',
   assetPrefix: '/wallisconsultancy/',
-  env: {
-    BACKEND_URL: '/wallisconsultancy',
-  },
 }
