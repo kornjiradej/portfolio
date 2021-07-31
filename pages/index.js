@@ -15,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://github.com/kornjiradej">Korn Jiradej World!</a>
-          <Link href='/about' as={process.env.BACKEND_URL + '/about'}><a>About</a></Link>
+          <Link href={`${process.env.BACKEND_URL}${href}`}>{href}</Link>
         </h1>
       </main>
 
