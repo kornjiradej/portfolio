@@ -13,13 +13,13 @@ module.exports = withPlugins([
     },
   }],
   { 
-    basePath: '/portfolio',
-    assetPrefix: '/portfolio/',
+    // basePath: '/portfolio',
+    // assetPrefix: '/portfolio/',
     images: {
       loader: "imgix",
       path: "",
     },
-    imagesPublicPath: '/portfolio/_next/static/images/',
+    imagesPublicPath: '/_next/static/images/',
     exportPathMap: async function (
       defaultPathMap,
       { dev, dir, outDir, distDir, buildId }
