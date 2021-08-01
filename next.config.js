@@ -1,20 +1,27 @@
-const withPlugins = require('next-compose-plugins');
+const withPlugins = require('next-compose-plugins'); 
+const withImages = require('next-images');
+const withFonts = require('next-fonts');
+const withOffline = require('next-offline');
 const optimizedImages = require('next-optimized-images');
  
-module.exports = withPlugins([
-  [optimizedImages, {
-    mozjpeg: {
-      quality: 80,
-    },
-    pngquant: {
-      speed: 3,
-      strip: true,
-      verbose: true,
-    },
-  }],
+const optimizedImagesSetting = [optimizedImages, {
+  mozjpeg: {
+    quality: 80,
+  },
+  pngquant: {
+    speed: 3,
+    strip: true,
+    verbose: true,
+  },
+}]
+
+module.exports = withPlugins([ optimizedImagesSetting, 
+  [withImages],
+  [withFonts],
+  [withOffline],
   { 
-    basePath: '/',
-    // assetPrefix: '/portfolio/',
+    // basePath: '/',
+    assetPrefix: '/',
     images: {
       loader: "imgix",
       path: "",
