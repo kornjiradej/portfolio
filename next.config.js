@@ -13,8 +13,8 @@ module.exports = withPlugins([
     },
   }],
   { 
-    basePath: 'https://kornjiradej.github.io/',
-    assetPrefix: 'https://kornjiradej.github.io/',
+    basePath: '/',
+    // assetPrefix: '/portfolio/',
     images: {
       loader: "imgix",
       path: "",
