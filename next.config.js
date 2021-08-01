@@ -20,8 +20,8 @@ module.exports = withPlugins([ optimizedImagesSetting,
   [withFonts],
   [withOffline],
   { 
-    basePath: '',
-    assetPrefix: '',
+    basePath: '/portfolio',
+    assetPrefix: '/portfolio/',
     images: {
       loader: "imgix",
       path: "",
